@@ -30,14 +30,14 @@ import {
             },
            ,
             {
-              label: <Link href="/orders">Orders</Link>,
+              label: <Link href="/Ventas">Ventas</Link>,
               icon: <ShoppingCartOutlined />,
-              key: "/orders",
+              key: "/Ventas",
             },
             {
-              label: <Link href="/customers">Customers</Link>,
+              label: <Link href="/Clientes">Clientes</Link>,
               icon: <UserOutlined />,
-              key: "/customers",
+              key: "/Clientes",
             },
             {
               label: <Link href="/Ventas">Ventas</Link>,

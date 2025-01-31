@@ -2,8 +2,8 @@
 
 export default function Home() {
   return (
-    <div className= "PageContent">
-      
+    <div className= "">
+      <div>swdds</div>
     </div>
   );
 }

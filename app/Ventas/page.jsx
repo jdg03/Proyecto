@@ -1,7 +1,7 @@
 function Ventas() {
     
     return (
-        <div className="PageContent">
+        <div>
             <h1>Ventas</h1>
             <p>Welcome to the Ventas</p>
         </div>

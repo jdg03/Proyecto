@@ -58,7 +58,11 @@ code {
   height: 100%;
 }
 .PageContent{
-  padding-left: 20px;
-  padding-top: 20px;
-
+ 
+  padding: 30px;
+  margin: 30px;
+ 
+  border: 2px solid rgb(115, 126, 246);
+ 
 }
+

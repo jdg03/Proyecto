@@ -1,7 +1,7 @@
 "use client";
 import { Avatar, Rate, Space, Table, Button } from "antd";
 import styles from "./inventario.module.css"; 
-
+import Link from 'next/link';
 const dataSource = [
   {
     key: "1",
@@ -49,6 +49,14 @@ const dataSource = [
 const Inventory = () => {
   return (
     <Space size={20} direction="vertical">
+
+        <div className={styles.buttonContainer}>
+        <Link href="/Inventario/agregar">
+         <Button type="primary">
+          Agregar Producto
+         </Button>
+        </Link>
+        </div>
       
       <Table className={styles.tableContainer}
         columns={[
@@ -112,6 +120,11 @@ const Inventory = () => {
           pageSize: 5,
         }}
       />
+
+  
+       
+      
+          
     </Space>
   );
 };
