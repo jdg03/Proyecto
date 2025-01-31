@@ -42,6 +42,26 @@ const dataSource = [
     stock: 30,
     brand: "Brand B",
     category: "Category 2",
+  },
+  {
+    key: "5",
+    thumbnail: "https://example.com/thumbnail2.jpg", // Usa una URL válida de imagen
+    title: "Product 2",
+    price: 150,
+    rating: 3.8,
+    stock: 30,
+    brand: "Brand B",
+    category: "Category 2",
+  },
+  {
+    key: "6",
+    thumbnail: "https://example.com/thumbnail2.jpg", // Usa una URL válida de imagen
+    title: "Product 2",
+    price: 150,
+    rating: 3.8,
+    stock: 30,
+    brand: "Brand B",
+    category: "Category 2",
   }
   // Añadir más productos según sea necesario
 ];
@@ -51,7 +71,7 @@ const Inventory = () => {
     <Space size={20} direction="vertical">
 
         <div className={styles.buttonContainer}>
-        <Link href="/Inventario/agregar">
+        <Link href="/inicio/inventario/agregar">
          <Button type="primary">
           Agregar Producto
          </Button>

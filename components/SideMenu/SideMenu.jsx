@@ -19,31 +19,27 @@ import {
           items={[
 
             {
-                label: <Link href="/Inventario">Inventario</Link>,
+                label: <Link href="/inicio/inventario">Inventario</Link>,
                 icon: <ShopOutlined />,
                 key: "/inventario",
               },
             {
-              label: <Link href="/Dashboard">Dashboard</Link>,
+              label: <Link href="/inicio/Dashboard">Dashboard</Link>,
               icon: <AppstoreOutlined />,
               key: "/Dashboard",
             },
            ,
             {
-              label: <Link href="/Ventas">Ventas</Link>,
+              label: <Link href="/inicio/Ventas">Ventas</Link>,
               icon: <ShoppingCartOutlined />,
               key: "/Ventas",
             },
             {
-              label: <Link href="/Clientes">Clientes</Link>,
+              label: <Link href="/inicio/Clientes">Clientes</Link>,
               icon: <UserOutlined />,
               key: "/Clientes",
             },
-            {
-              label: <Link href="/Ventas">Ventas</Link>,
-              icon: <ShoppingCartOutlined />,
-              key: "/sales",
-            },
+            
           ]}
         />
       </div>
