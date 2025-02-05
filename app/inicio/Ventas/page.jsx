@@ -3,7 +3,7 @@ function Ventas() {
     return (
         <div>
             <h1>Ventas</h1>
-            <p>Welcome to the Ventas</p>
+            <p>Welcome to the Ventdfsgsfgdfgdfgdfs</p>
         </div>
     );
 }

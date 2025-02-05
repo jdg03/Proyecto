@@ -39,7 +39,11 @@ import {
               icon: <UserOutlined />,
               key: "/Clientes",
             },
-            
+            {
+              label: <Link href="/inicio/Ventas">Ventas</Link>,
+              icon: <ShoppingCartOutlined />,
+              key: "/sales",
+            },
           ]}
         />
       </div>
