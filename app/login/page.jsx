@@ -18,7 +18,7 @@ function Login() {
 
         {/* Sección derecha con el formulario */}
         <div className={styles["form-container"]}>
-          <h1 className={styles["form-title"]}>Bienvenido a Taller ****</h1>
+          <h1 className={styles["form-title"]}>Ingresar al sistema</h1>
           <p className={styles["form-subtitle"]}>
             Ingrese sus credenciales para iniciar sesión.
           </p>
@@ -27,7 +27,7 @@ function Login() {
             {/* Usuario */}
             <div className={styles["input-field"]}>
               <label htmlFor="user" className={styles["input-label"]}>
-                Usuario
+                Correo
               </label>
               <div className="relative">
                 <UserOutlined className={styles["input-icon"]} />
@@ -66,8 +66,8 @@ function Login() {
             {/* Enlace de registro */}
             <div className={styles["register-link-container"]}>
               <p className="text-gray-600">¿No tienes una cuenta? </p>
-              <Link href="/register">
-              <span className="ml-2 text-[#780000]  hover:underline cursor-pointe">Regístrate</span>
+              <Link href="/registro">
+              <span className="ml-2 text-[#1b1541]  hover:underline cursor-pointe">Regístrate</span>
               </Link>
             </div>
           </form>
