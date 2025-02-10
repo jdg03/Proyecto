@@ -1,9 +1,20 @@
+"use client";
 import Link from "next/link";
 import * as React from "react";
 import { UserOutlined, LockOutlined } from "@ant-design/icons";
 import styles from "./login.module.css";
+import { signInAction } from "@/supabase/actions";
 
 function Login() {
+
+
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    const user = event.target.user.value;
+    const password = event.target.password.value;
+    await signInAction(user, password);
+  };
+
   return (
     <div className={styles["login-container"]}>
       <div className={styles["login-box"]}>
@@ -23,7 +34,7 @@ function Login() {
             Ingrese sus credenciales para iniciar sesión.
           </p>
 
-          <form className="w-full max-w-md mt-6 space-y-5">
+          <form className="w-full max-w-md mt-6 space-y-5" onSubmit={handleSubmit}>
             {/* Usuario */}
             <div className={styles["input-field"]}>
               <label htmlFor="user" className={styles["input-label"]}>

@@ -1,6 +1,14 @@
+"use client";
 import Link from "next/link";
+import { signUpAction } from "@/supabase/actions";
 
 function Registro() {
+
+    const handleSubmit = async (event) => {
+        event.preventDefault();
+        const formData = new FormData(event.target);
+        await signUpAction(formData);
+      };
 
     
     return (
@@ -8,8 +16,8 @@ function Registro() {
             <div className="bg-white p-6 rounded-lg shadow-lg w-96">
                 <h2 className="text-2xl font-bold text-center text-gray-700 mb-4">Registro de Usuario</h2>
 
-                <form action=""className="space-y-4">
-                    {/* Nombre */}
+                <form onSubmit={handleSubmit} className="space-y-4">
+                 
                     <div>
                         <label htmlFor="name" className="block text-sm font-medium text-gray-700">Nombre</label>
                         <input
